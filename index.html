@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/ico" href="img/ipn.ico" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="css/general.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/rotacion3D.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/principal.css" media="screen"/>
+
+
+		<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="js/easeljs-0.6.1.min.js"></script>
+
+        <script type="text/javascript" src="js/general.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
+		<script type="text/javascript" src="js/rotacion3d.js"></script>
+
+        <title>C&eacute;lula Eucariota</title>
+    </head>
+
+    <body>
+        <div  class="oacontext">
+            <header class="header">
+                <div class="ipn">
+                    <a target="_blank" href="https://www.upibi.ipn.mx/" title="Instituto Polit&eacute;cnico Nacional"> <img src="img/general/LOGO POLI PANTONE 222 C.png" width="60" height="64" alt="IPN"> </a>
+                </div>
+
+                <div class="botones_encabezado">
+                    ESTRUCTURA DE UNA C&Eacute;LULA EUCARIOTA 
+                </div>
+                <div class="materia">
+                    <!--<img src="img/sprites/icono_materia.png" width="49" height="50" alt="Biolog&iacute;a">-->
+                    <span class="nombre"> <i class="fas fa-microscope"></i> Biolog&iacute;a</span>
+                </div>
+            </header>
+
+            <div class="contenido clearfix">
+                <div  class="preloader">
+                    <div>
+                        espere...
+                    </div>
+                </div><!--preloader-->
+
+                <div class="ventana ventanaFC fichaDidactica oculto" data-name="fichaDidactica" >
+                    <a class="btn-close" data-action="close" href="javascript:;" >X</a>
+                    <h2 class="titulo">Ficha tem&aacute;tica</h2>
+                    <div class="info clearfix">
+                        <h4>ASIGNATURA: BIOLOG&Iacute;A IV</h4>
+                        <h4>Segunda unidad: La c&eacute;lula: unidad estructural y funcional de los seres vivos</h4>
+
+                        <h4>Aprendizajes esperados: </h4>
+                        <div>
+                            <ul>
+                                <li>
+                                    Reconocer la estructura y funci&oacute;n de cada parte de la c&eacute;lula (eucariota y procariota).
+                                </li>
+                                <li>
+                                    Identificar las diferencias y semejanzas en la organizaci&oacute;n de las estructuras celulares: eucariotas (animal y vegetal) y procariotas.
+                                </li>
+                            </ul>
+ 						</div>
+						
+                        <div class="recurso">
+                            Recurso educativo desarrollado para el plan de estudios de la ENP de la UNAM. Versi&oacute;n 1.0.0
+                        </div>
+                        <div class="leyenda">
+                            2014 Universidad Nacional Aut&oacute;noma de M&eacute;xico
+                            <span>|</span>
+                            Hecho en M&eacute;xico
+                            <span>|</span>
+                            &copy; Todos los derechos reservados. Esta p&aacute;gina electr&oacute;nica puede ser reproducida, sin objeto comercial, siempre y cuando su contenido no se mutile o altere, se cite la fuente completa y la direcci&oacute;n Web de conformidad con el art&iacute;culo 148 de la Ley Federal del Derecho de Autor, de otra forma, se requerir&aacute; permiso previo y por escrito de la UNAM.
+                        </div>
+                    </div><!--info-->
+                </div><!-- ficha didactica -->
+
+                <div class="ventana ventanaFC creditos oculto" data-name="creditos" data-initdisplay="hide">
+                    <a class="btn-close" data-action="close" href="javascript:;" >X</a>
+                    <h2 class="titulo">CR&Eacute;DITOS</h2>
+                    <div class="info">
+                        <div class="creditosENTIDAD">
+                            <p class="nombreEntidad">
+                                Colegio de Ciencias y Humanidades
+                            </p>
+                            <ul>
+                                <li>
+                                    <span class="nombre">Macarita Guadalupe I. Calc&aacute;neo Garc&eacute;s</span>
+									<span class="nombre">Lourdes de la Cueva Barajas</span>
+                                    <span class="cargo">Idea original y contenido</span>
+                                </li>
+                            </ul>
+                        </div><!-- /creditosENP -->
+                        <div class="creditosDGTIC">
+                            <p class="nombreEntidad">
+                                Direcci&oacute;n General de C&oacute;mputo y de Tecnolog&iacute;as de Informaci&oacute;n y Comunicaci&oacute;n
+                            </p>
+                            <ul class="col">
+                                <li>
+                                    <span class="nombre">Mar&iacute;a Dolores Mendoza Guzm&aacute;n</span>
+									<span class="nombre">Pablo Enrique Zenil Rivas</span>
+                                    <span class="credito">Desarrollo de sistemas</span>
+                                </li>
+                                <li>
+									<span class="nombre">Antonio Eder Navarro Mendoza</span>
+                                    <span class="credito">Dise&ntilde;o did&aacute;ctico</span>
+									<span class="credito">Dise&ntilde;o gr&aacute;fico</span>
+                                </li>
+                                <li>
+                                    <span class="nombre">Mar&iacute;a Antonieta Carrasco Espinosa</span>
+									<span class="nombre">Antonio Eder Navarro Mendoza</span>
+									<span class="credito">Ilustraci&oacute;n</span>
+                                </li>
+                                <li>
+                                    <span class="nombre">Daniel Gonz&aacute;lez Lorenzo</span>
+									<span class="nombre">Emanuel Roj&oacute;n Gonz&aacute;lez</span>
+									<span class="nombre">Carlos Mauricio Rosales L&oacute;pez</span>
+									<span class="credito">Modelado 3D</span>
+                                </li>
+                                <li>
+                                    <span class="nombre">Daniel Gonz&aacute;lez Lorenzo</span>
+									<span class="nombre">Carlos Mauricio Rosales L&oacute;pez</span>
+									<span class="nombre">Luis Daniel Galicia de Gante</span>
+									<span class="nombre">Juan Edmundo Urresti Chiu</span>
+									<span class="credito">Producci&oacute;n 3D</span>
+                                </li>
+                            </ul>
+                            <ul class="col">
+                                <li>
+                                    <span class="nombre">Mario Alberto Hern&aacute;ndez Mayorga</span>
+                                    <span class="credito">Coordinaci&oacute;n del desarrollo</span>
+                                </li>
+                                <li>
+                                    <span class="nombre">Teresa V&aacute;zquez Mantec&oacute;n</span>
+                                    <span class="credito">Coordinaci&oacute;n del proyecto</span>
+                                </li>
+                            </ul>
+                        </div><!-- /creditosDGTIC -->
+                    </div><!--info-->
+				</div><!-- creditos -->
+
+                <div class="ventana ventanaFC bibliografia oculto">
+                    <h2 class="titulo">Bibliograf&iacute;a</h2>
+                    <div class="info linea-bibliografia">
+                        <ul>
+                            <li>
+                                autor. (año). <i>título.</i> país: editorial.
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- bibliografia -->
+
+				<div class="ventana content3D oculto" data-name="vtn01" data-initdisplay="hide">
+					<div class="contenedor_3D">
+						<p class="titulo"></p>
+						<div class="celula3d invisible"></div>
+						<div class="imgFija invisible"></div>
+					</div>
+					<div class="contenedor_texto">
+						<p></p>
+					</div>
+				</div><!--content3D-->
+
+	         
+		
+				<div class="opciones">
+					<span class="letras"></span><input id="radio_a" class="opcionradio" type="radio" name="opcionradio" value="0"/>
+						<label for="radio_a"><span class="lbl">animal</span></label><br/><br/>
+					<span class="letras"></span><input id="radio_b" class="opcionradio" type="radio" name="opcionradio" value="1"/>
+						<label for="radio_b"><span class="lbl">vegetal</span></label><br/><br/>
+		  		</div><!--opciones-->
+				
+                <div class="fases">
+                    <div class="fase animal" data-name="animal">
+						<div class="cellbox"></div>
+						
+						<ul class="celula_euca">
+							<li class="centrosomaCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="centrosoma_animal" data-tit="Centrosoma" href="javascript:;">CENTROSOMA</a>
+							</li>
+							<li class="ciliosCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="cilios" data-tit="Cilios" href="javascript:;">CILIOS</a>
+							</li>
+							<li class="citoesqCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="citoesqueleto" data-tit="Citoesqueleto" href="javascript:;">CITOESQUELETO</a>
+							</li>
+							<li class="cromatinaCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="cromatina" data-tit="Cromatina" href="javascript:;">CROMATINA</a>
+							</li>
+                            	<li class="envolturaNCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="envoltura" data-tit="Envoltura nuclear" href="javascript:;">ENVOLTURA<br/>NUCLEAR</a>
+							    </li>
+							<li class="flageloCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="flagelo" data-tit="Flagelos" href="javascript:;">FLAGELOS</a>
+							</li>
+							<li class="golgiCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="golgi" data-tit="Aparato de Golgi" href="javascript:;">APARATO DE GOLGI</a>
+							</li>
+							<li class="reticuloLCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="liso" data-tit="Ret&iacute;culo endopl&aacute;smico liso" href="javascript:;">RET&Iacute;CULO <br> ENDOPL&Aacute;SMICO <br> LISO (REL)</a>
+							</li>
+							<li class="lisosomasCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="lisosomas" data-tit="Lisosomas" href="javascript:;">LISOSOMAS</a>
+							</li>
+							<li class="memPlasmCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="membrana_plasmatica_eucariota" data-tit="Membrana plasm&aacute;tica" href="javascript:;">MEMBRANA PLASM&Aacute;TICA</a>
+							</li>
+							<li class="mitocondriasCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="mitocondrias" data-tit="Mitocondrias" href="javascript:;">MITOCONDRIAS</a>
+							</li>
+							<li class="nucleoCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="nucleo" data-tit="N&uacute;cleo" href="javascript:;">N&Uacute;CLEO</a>
+							</li>
+							<li class="nucleoloCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="nucleolo" data-tit="Nucl&eacute;olo" href="javascript:;">NUCL&Eacute;OLO</a>
+							</li>
+							<li class="nucleoPlasCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="nucleoplasma" data-tit="Nucleoplasma" data-imgfija="1" href="javascript:;">NUCLEOPLASMA</a>
+							</li>
+							<li class="porosNuCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="poros_nucleares" data-tit="Poros nucleares" data-imgfija="1" href="javascript:;">POROS<br/>NUCLEARES</a>
+							</li> 
+							<li class="citoplasmaCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="citoplasma" data-tit="Citoplasma" href="javascript:;">CITOPLASMA</a>
+							</li>
+							<li class="ribosomasDerCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="ribosomas" data-tit="Ribosomas" href="javascript:;">RIBOSOMAS</a>
+							</li>
+							<li class="reticuloRCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="rugoso" data-tit="Ret&iacute;culo endopl&aacute;smico rugoso" href="javascript:;">RETÍCULO<br/>ENDOPLÁSMICO RUGOSO<br/>(RER)</a>
+							</li>
+						</ul><!--celula_euca-->
+					</div><!--animal-->
+					
+					<div class="fase vegetal" data-name="vegetal">
+						<div class="cellbox"></div>
+						
+						<ul class="celula_euca_vegetal">
+							<li class="centrosomaCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="centrosoma" data-tit="Centrosoma" data-imgfija="1" href="javascript:;">CENTROSOMA</a>
+							</li>
+							<li class="citoesqCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="citoesqueleto" data-tit="Citoesqueleto" href="javascript:;">CITOESQUELETO</a>
+							</li>
+							<li class="cloroplastoCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="cloroplasto" data-tit="Cloroplasto" href="javascript:;">CLOROPLASTO</a>
+							</li>
+                        	<li class="cromatinaCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="cromatina" data-tit="Cromatina" href="javascript:;">CROMATINA</a>
+							</li>
+                   			<li class="envolturaNCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="envoltura" data-tit="Envoltura nuclear" href="javascript:;">ENVOLTURA<br/>NUCLEAR</a>
+							</li>
+							<li class="golgiCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="golgi" data-tit="Aparato de Golgi" href="javascript:;">APARATO DE GOLGI</a>
+							</li>
+							<li class="reticuloLCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="liso" data-tit="Ret&iacute;culo endopl&aacute;smico liso" href="javascript:;">RET&Iacute;CULO <br> ENDOPL&Aacute;SMICO <br> LISO (REL)</a>
+							</li>
+							<li class="citoplasmaCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="citoplasma" data-tit="Citoplasma" href="javascript:;">CITOPLASMA</a>
+							</li>
+							<li class="memPlasmCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="membrana_plasmatica_eucariota" data-tit="Membrana plasm&aacute;tica" href="javascript:;">MEMBRANA <br> PLASM&Aacute;TICA</a>
+							</li>
+							<li class="mitocondriasCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="mitocondrias" data-tit="Mitocondrias" href="javascript:;">MITOCONDRIAS</a>
+							</li>
+							<li class="nucleoCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="nucleo" data-tit="N&uacute;cleo" href="javascript:;">N&Uacute;CLEO</a>
+							</li>
+							<li class="nucleoloCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="nucleolo" data-tit="Nucl&eacute;olo" href="javascript:;">NUCL&Eacute;OLO</a>
+							</li>
+                			<li class="nucleoPlasCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="nucleoplasma" data-tit="Nucleoplasma" data-imgfija="1" href="javascript:;">NUCLEOPLASMA</a>
+							</li>
+                     		 <li class="paredCelularCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="pared_celular_vegetal" data-tit="Pared celular" href="javascript:;">PARED CELULAR</a>
+							</li>
+                  			<li class="porosNuCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="poros_nucleares" data-tit="Poros nucleares" data-imgfija="1" href="javascript:;">POROS<br/>NUCLEARES</a>
+							</li> 
+							<li class="ribosomasCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="ribosomas" data-tit="Ribosomas" href="javascript:;">RIBOSOMAS</a>
+							</li>
+							<li class="reticuloRCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="rugoso" data-tit="Ret&iacute;culo endopl&aacute;smico rugoso" href="javascript:;">RET&Iacute;CULO<br/>ENDOPL&Aacute;SMICO RUGOSO<br/>(RER)</a>
+							</li>
+							<li class="vacuolaCell">
+								<a class="simBtn" data-action="open" data-target="vtn01" data-obj="vacuola" data-tit="Vacuolas" href="javascript:;">VACUOLAS</a>
+							</li>
+						</ul><!--celula_euca_vegetal-->
+					</div><!--vegetal-->
+					
+					<div class="todaInformacion invisible">
+                    	<div class="centrosoma_animal">
+							<p>
+								Estructura localizada en el &aacute;rea central de las c&eacute;lulas animales y vegetales, cerca del n&uacute;cleo, que se considera 
+                            	el principal centro organizador de microt&uacute;bulos y a partir de &eacute;l se origina una estructura llamada huso mit&oacute;tico, 
+                              	responsable del desplazamiento de los cromosomas a los polos opuestos de la célula, durante la división celular. 
+								En las c&eacute;lulas animales, contiene un par de centriolos.
+							</p>								   
+						</div>
+                    	<div class="centrosoma">
+							<p>
+								Estructura localizada en el &aacute;rea central de las c&eacute;lulas animales y vegetales, cerca del n&uacute;cleo, que se considera 
+                            	el principal centro organizador de microt&uacute;bulos y a partir de &eacute;l se origina una estructura llamada huso mit&oacute;tico, 
+                              	responsable del desplazamiento de los cromosomas a los polos opuestos de la célula, durante la división celular. 
+								En las c&eacute;lulas animales, contiene un par de centriolos.
+							</p>								   
+						</div>
+						<div class="cilios">
+							<p>
+								Son organelos que ayudan a la locomoci&oacute;n y/o desplazamiento de materiales.
+                                Son estructuras de locomoci&oacute;n en los eucariontes unicelulares; 
+								mientras que, en los organismos pluricelulares desempeñan diferentes funciones;
+                                por ejemplo, los cilios que se encuentran en la superficie del epitelio 
+                                respiratorio y, los que se encuentran recubriendo el interior de los oviductos 
+                                de los mam&iacute;feros. 
+							</p>
+						</div>
+                     	<div class="citoesqueleto">
+							<p>
+								Consiste en una red organizada de filamentos y t&uacute;bulos de diferentes prote&iacute;nas, interconectados 
+                                entre s&iacute;, que se distribuyen por toda la c&eacute;lula a trav&eacute;s del citoplasma y van desde la 
+                                membrana plasmática al n&uacute;cleo. Las funciones que realiza están relacionadas con la estabilidad en la forma 
+                                de la c&eacute;lula y la organizaci&oacute;n del citoplasma, adem&aacute;s interviene en una gran variedad de 
+                                procesos din&aacute;micos como son: el transporte intracelular de materiales, el movimiento de las c&eacute;lulas 
+                                (locomoción), as&iacute; como de sus organelos y estructuras.<br/><br/>
+								El citoesqueleto es din&aacute;mico y adaptable a las necesidades de la c&eacute;lula, ya que cambia constantemente
+                                debido a que puede ensamblarse o desensamblarse r&aacute;pidamente en diferentes sitios de la c&eacute;lula. 
+                              	Est&aacute; formado por tres tipos de fibras: microt&uacute;bulos, microfilamentos y filamentos intermedios.
+							</p>
+						</div>
+                     	<div class="citoplasma">
+							<p>
+								Constituye la mayor parte de la masa de las c&eacute;lulas, se sit&uacute;a entre la envoltura nuclear y 
+								la membrana plasm&aacute;tica. Tiene la apariencia de un gel viscoso y est&aacute; constituido por aproximadamente 
+								75% de agua, sales minerales, gran variedad de iones, az&uacute;cares, prote&iacute;nas, &aacute;cidos grasos y nucle&oacute;tidos. 
+								En &eacute;l tiene lugar la s&iacute;ntesis de prote&iacute;nas y su degradaci&oacute;n, as&iacute; 
+								como el desarrollo de la mayor&iacute;a de las reacciones del metabolismo intermedio de la c&eacute;lula. 
+								Aqu&iacute; se encuentran suspendidos los diferentes organelos y estructuras celulares; 
+								para organizarlos existe una amplia red de fibras proteicas llamada citoesqueleto.
+							</p>
+						</div>
+                      	<div class="cloroplasto">
+							<p>
+								Son organelos caracter&iacute;sticos de las c&eacute;lulas vegetales que se localizan en las partes
+								verdes de las plantas, tienen forma oval o de disco, miden entre 5 y 10 μm de longitud
+								y son muy abundantes, pudiendo haber entre 20 y 100 en cada c&eacute;lula. Son los responsables
+								de realizar la fotos&iacute;ntesis, es decir, de transformar la energ&iacute;a luminosa del sol en energ&iacute;a qu&iacute;mica (glucosa).
+								<br/><br/>
+								Los cloroplastos est&aacute;n constituidos por una membrana externa lisa muy permeable y una interna que encierra un medio
+								semil&iacute;quido llamado estroma que contiene diversas enzimas, mol&eacute;culas de ADN y ribosomas.
+								En el interior del estroma hay una serie de sacos o bolsas membranosas en forma de disco, huecas e
+								interconectadas llamadas tilacoides, a la pila de ellos se le llama granum (plural grana) y est&aacute;n
+								distribuidos por todo el estroma. En la membrana de los tilacoides se encuentra contenido un pigmento
+								fotosint&eacute;tico de color verde llamado clorofila, que es el encargado de captar la energ&iacute;a luminosa del sol,
+								junto con otros pigmentos que actúan como auxiliares.
+								Entre las dos membranas se encuentra un espacio lleno de fluido llamado espacio intermembranoso.    
+							</p>
+						</div>
+                    	<div class="cromatina">
+							<p>
+								El ADN (&Aacute;cido Desoxirribonucleico) se encuentra en el interior del n&uacute;cleo, separado del resto de las
+                                mol&eacute;culas que contiene la c&eacute;lula. Est&aacute; asociado con prote&iacute;nas llamadas histonas, 
+                                formando a la cromatina que tiene el aspecto de una red de gr&aacute;nulos y cadenas; cuando la cromatina se pliega y
+                                empaqueta forma unas estructuras compactas llamadas cromosomas los cuales contienen la informaci&oacute;n hereditaria 
+                                de los organismos.
+							</p>
+						</div>
+                      	<div class="envoltura">
+							<p>
+								Limita al n&uacute;cleo y separa al contenido nuclear del citoplasma. Est&aacute; constituida por una doble membrana, ambas son diferentes 
+                                tanto bioqu&iacute;micamente como funcionalmente. 
+								Posee un gran n&uacute;mero de perforaciones llamados poros nucleares (entre 3,000 y 4,000), que se originan por la fusi&oacute;n de las 
+                                dos membranas y por los cuales se lleva a cabo la comunicaci&oacute;n y el transporte de materiales entre el n&uacute;cleo y el citoplasma, 
+                               	adem&aacute;s de mantener separados los procesos metab&oacute;licos. 
+								La membrana nuclear externa se contin&uacute;a con la membrana del ret&iacute;culo endopl&aacute;smico.
+							</p>									
+						</div>
+                  		<div class="flagelo">
+							<p>
+								Los organismos y algunas c&eacute;lulas que presentan flagelos, generalmente tienen uno o dos.
+								Son largos y miden entre 100 y 200 μm de longitud, est&aacute;n formados por prote&iacute;nas.
+                                 Su funci&oacute;n es el desplazamiento con movimientos de tipo ondulante, inici&aacute;ndose en la base y  propag&aacute;ndose hacia el &aacute;pice.
+
+							</p>
+						</div>
+						<div class="golgi">
+							<p>
+                                Est&aacute; compuesto por una serie de sacos membranosos aplanados que reciben el nombre de cisternas, 
+                                las cuales se disponen formando pilas llamadas dictiosomas. Tres partes lo integran: el lado cis por 
+                          		donde entran las mol&eacute;culas provenientes del retículo endopl&aacute;smico, las cisternas
+                           		intermedias donde se procesan dichas mol&eacute;culas y el lado trans desde donde se reparten a otros 
+                             	compartimentos.<br/><br/> Las funciones que realiza son: recibir y modificar qu&iacute;micamente prote&iacute;nas 
+                             	y l&iacute;pidos que han sido construidos en el ret&iacute;culo endopl&aacute;smico y los prepara para 
+                           		expulsarlos de la c&eacute;lula; elabora la mayor&iacute;a de los carbohidratos de las c&eacute;lulas
+                             	y en las plantas est&aacute; relacionado con la s&iacute;ntesis de celulosa. 
+                            	Tambi&eacute;n es un centro de reparto, ya que desde el aparato de Golgi salen ves&iacute;culas 
+                           		con mol&eacute;culas procesadas hacia la membrana plasm&aacute;tica. Adem&aacute;s interviene en la 
+                             	formaci&oacute;n de los lisosomas.
+							</p>									
+						</div>
+						<div class="liso">
+							<p>
+								Es semejante al Ret&iacute;culo Endopl&aacute;smatico Rugoso (RER) pero m&aacute;s tubular y sin ribosomas adheridos, 
+                           		por lo que tiene aspecto liso. La funci&oacute;n que realiza est&aacute; relacionada con la s&iacute;ntesis de 
+               					l&iacute;pidos, tambi&eacute;n interviene en la destoxificaci&oacute;n (degradaci&oacute;n de sustancias 
+                    			t&oacute;xicas y/o drogas como el alcohol). La cantidad de Ret&iacute;culo Endopl&aacute;smico Liso (REL) 
+                              	depende de las funciones que realice la c&eacute;lula, por ejemplo en el h&iacute;gado (hepatocitos) 
+                              	es m&aacute;s abundante y aumenta de acuerdo al consumo de sustancias t&oacute;xicas, asimismo 
+                              	participa en el almacenamiento del calcio.
+							</p>									 
+						</div>
+						<div class="lisosomas">
+							<p>
+								Son ves&iacute;culas grandes que provienen del aparato de Golgi y contiene enzimas digestivas. 
+								Est&aacute;n compuestos por una membrana sencilla que presenta en su interior protecci&oacute;n contra 
+								las enzimas que contiene, ya que son muy potentes.<br/><br/>
+                                Se encargan de degradar y destruir todo aquello que puede ser dañino para la c&eacute;lula, 
+								como pueden ser organelos que presenten defectos, microorganismos, prote&iacute;nas dañinas, entre otras. 
+								Los gl&oacute;bulos blancos, que son parte del sistema inmune del cuerpo, presentan muchos lisosomas. 
+							</p>
+						</div>
+						<div class="membrana_plasmatica_eucariota">
+							<p> 
+								Es una estructura flexible que est&aacute; presente en todas las c&eacute;lulas, se encuentra rode&aacute;ndola 
+                               	y determina los l&iacute;mites entre su parte interna y externa. Regula el paso de sustancias, capta los cambios
+                            	en el exterior y responde a ellos. Tambi&eacute;n permite la interacci&oacute;n entre las c&eacute;lulas y 
+                           		act&uacute;a como una barrera selectiva y semipermeable. <br/><br/>Su estructura se explica con el modelo del mosaico fluido, 
+                           		planteado por S. Singer y G. Nicholson (1972), que indica que las membranas est&aacute;n formadas por una bicapa 
+                           		de fosfol&iacute;pidos con mol&eacute;culas de colesterol inclu&iacute;das y prote&iacute;nas distribuidas en 
+                         		forma irregular. Y en la parte externa de la membrana presenta oligosac&aacute;ridos unidos a las prote&iacute;nas 
+                          		(glicoprote&iacute;nas) o a los l&iacute;pidos (glicol&iacute;pidos).
+							</p>									
+						</div>
+                      	<div class="mitocondrias">
+							<p>
+								Son organelos de forma alargada que miden entre 0.5 a 1 μm de di&aacute;metro, se encuentran en el citoplasma 
+                          		y su n&uacute;mero puede variar dependiendo del tipo de c&eacute;lula. La funci&oacute;n que llevan a cabo 
+                            	es la respiraci&oacute;n aerobia, es decir, est&aacute;n relacionadas con la producci&oacute;n de energ&iacute;a
+                       			(s&iacute;ntesis de ATP –Adenosin Trifosfato-). Su n&uacute;mero puede aumentar de acuerdo
+                               	con las necesidades de la c&eacute;lula ya que se pueden reproducir por fisi&oacute;n o gemación o bien, pueden 
+                                disminuir por autofagia. <br/><br/>Est&aacute;n formadas por dos membranas: la externa que es lisa y permeable y la interna
+                  				que es impermeable a iones y semipermeable a pequeñas mol&eacute;culas. La membrana interna contiene una gran 
+               					variedad de enzimas y se pliega para formar las crestas mitocondriales, lo que aumenta su superficie; 
+                        		el n&uacute;mero de crestas var&iacute;a dependiendo de la c&eacute;lula de que se trate. 
+                         		Entre las dos membranas se encuentra el espacio intermembranoso que est&aacute; lleno de fluidos y una gran 
+                       			variedad de enzimas.<br/><br/> En el interior de la mitocondria, entre las crestas, est&aacute; la matriz mitocondrial 
+                          		que tambi&eacute;n contiene una gran diversidad de enzimas, necesarias para la respiraci&oacute;n, contiene 
+                       			adem&aacute;s mol&eacute;culas de ADN (&Aacute;cido Desoxirribonucleico), ribosomas, ARNt &Aacute;cido 
+                          		Ribonucleico de Transferencia) y enzimas.
+							</p>									 
+						</div>
+						<div class="nucleo">
+							<p>
+								Es el organelo m&aacute;s prominente de la c&eacute;lula, generalmente tiene forma esf&eacute;rica y se 
+                                ubica en el centro. Contiene la mayor parte del ADN (&Aacute;cido Desoxirribonucleico), por tanto, regula
+                                sus funciones y se le considera el centro de control gen&eacute;tico y de las actividades celulares. 
+                                Está constituido principalmente por cuatro partes que son: la envoltura nuclear, el nucleoplasma, la 
+                                cromatina y el nucl&eacute;olo.
+							</p>
+						</div>
+                     	<div class="nucleoplasma">
+							<p>
+								Constituye el medio interno del n&uacute;cleo, contiene prote&iacute;nas, enzimas, nucle&oacute;tidos de ADN 
+                                (&Aacute;cido Desoxirribonucleico) y ARN (&Aacute;cido Ribonucleico), iones y agua, su consistencia es coloidal. 
+                                En el nucleoplasma se encuentran 1 o 2 nucl&eacute;olos, la cromatina y adem&aacute;s presenta una red formada 
+                                por prote&iacute;nas fibrilares que evita que la cromatina se enrede. 
+                                Es el sitio en donde se realiza la s&iacute;ntesis y el empaquetamiento de los &aacute;cidos nucleicos.
+							</p>
+						</div>
+						<div class="nucleolo">
+							<p>
+								Se localiza en el interior del n&uacute;cleo, es la estructura m&aacute;s notoria,
+								ligeramente esf&eacute;rico y de apariencia densa. No est&aacute; rodeado por membrana y
+								consiste en una gran acumulaci&oacute;n de diversas macromol&eacute;culas, como el ADN (&Aacute;cido Desoxirribonucleico),
+								ARNr (&Aacute;cido Ribonucleico Ribos&oacute;mico) y prote&iacute;nas; generalmente hay uno o dos nucl&eacute;olos y su tamaño puede variar.
+                                <br/><br/>
+                            	La funci&oacute;n que realiza el nucl&eacute;olo est&aacute; relacionada con la s&iacute;ntesis del ARNr,
+                     			el ensamblaje de los componentes de los ribosomas y la s&iacute;ntesis del ARNt
+                      			(&Aacute;cido Ribonucleico de Transferencia). 
+							</p>
+						</div>
+                     	<div class="pared_celular_vegetal">
+							<p>
+								Las c&eacute;lulas de los hongos y los vegetales se caracterizan por presentar una pared celular,
+								que es una estructura que se localiza fuera de la membrana plasm&aacute;tica, rodeando a la c&eacute;lula. 
+								Proporciona protecci&oacute;n, resistencia, soporte estructural y mec&aacute;nico, y adem&aacute;s act&uacute;a 
+								como compartimento celular. Consiste en una capa r&iacute;gida, formada principalmente por un polisac&aacute;rido 
+								de alto peso molecular que en el caso de los vegetales es la celulosa, la cual es sintetizada por el aparato de Golgi.
+								<br/><br/>
+								La pared celular de vegetales est&aacute; formada por la combinaci&oacute;n de fibras de celulosa con 
+								otros polisac&aacute;ridos y prote&iacute;nas organizadas en capas que se acomodan en diferentes direcciones, 
+								lo que le da una gran resistencia mec&aacute;nica. Tambi&eacute;n tiene una pared primaria que se forma inmediatamente 
+								que se dividi&oacute; la c&eacute;lula y durante su crecimiento; se caracteriza por ser delgada, flexible y 
+								elaborada por fibras de celulosa. Cuando la c&eacute;lula termina su crecimiento la pared primaria puede engrosarse
+								o solidificarse, o bien, se forman numerosas capas con otro tipo de mol&eacute;culas, dando lugar a la pared secundaria; 
+								&eacute;sta quedar&aacute; entre la pared primaria y la membrana plasm&aacute;tica. Las c&eacute;lulas vegetales 
+								est&aacute;n en comunicaci&oacute;n por unos canales llamados plasmodesmos. 
+						</div>
+						<div class="poros_nucleares">
+							<p>
+								Es el m&aacute;s grande complejo de prote&iacute;nas dentro de la c&eacute;lula. 
+								Su tamaño puede llegar a ser cinco veces m&aacute;s grande que los ribosomas, a pesar de tener muchas menos 
+								prote&iacute;nas. Estos presentan 30 tipos diferentes de prote&iacute;nas llamadas nucleoporinas. 
+								Muestran una estructura compleja con simetr&iacute;a octagonal y un arreglo cil&iacute;ndrico alrededor del eje de transporte.
+								<br/><br/>
+								<br/>Se encargan de comunicar el citoplasma con el nucleoplasma. Son selectivos, es decir, 
+								no todas las sustancias pasar&aacute;n de un lado a otro, adem&aacute;s, requieren de energ&iacute;a para llevar a cabo el transporte.
+                      		</p>									
+						</div>
+						<div class="ribosomas">
+							<p>
+								Son estructuras muy pequeñas formadas por ARNr (&Aacute;cido Ribonucleico ribosómico) 
+                          		y prote&iacute;nas, no est&aacute;n rodeados por membranas y tienen forma esf&eacute;rica 
+                      			o el&iacute;ptica. Están presentes en todas las células, se localizan libres en el 
+                         		citoplasma adheridos al ret&iacute;culo endopl&aacute;smico formando el RER (Ret&iacute;culo 
+                             	Endopl&aacute;smico Rugoso) en los cloroplastos y las mitocondrias.<br/><br/>Los ribosomas se 
+                             	encargan de sintetizar las prote&iacute;nas necesarias para la c&eacute;lula; las 
+                         		elaboradas por los ribosomas libres, son utilizadas por la propia c&eacute;lula y las 
+                        		sintetizadas por los ribosomas adheridos al ret&iacute;culo endopl&aacute;smico, son 
+                      			de secreción o para las membranas.
+							</p>
+						</div>
+						<div class="rugoso">
+							<p>
+								El RER consta de un sistema de membranas organizadas en forma de una red de t&uacute;bulos ramificados y sacos
+                     			aplanados interconectados, &eacute;stos se inician en la membrana externa de la envoltura nuclear y est&aacute;n 
+                              	distribuidos por todo el citoplasma. Su apariencia es granular debido a la presencia de miles de ribosomas 
+                            	que se adhieren en la cara externa de la membrana.<br/><br/>
+								La funci&oacute;n que desempeña est&aacute; relacionada con la s&iacute;ntesis y ensamblaje de prote&iacute;nas 
+                         		(actividad que realizan espec&iacute;ficamente los ribosomas), por lo tanto, las c&eacute;lulas secretoras 
+                        		tendr&aacute;n mayor cantidad de RER.
+							</p>
+						</div>
+						<div class="vacuola">
+							<p>
+                               	Organelos celulares t&iacute;picos de c&eacute;lulas vegetales formados por un saco membranoso selectivamente
+								permeable que se conoce como tonoplasto, &eacute;ste contiene agua y una gran variedad de mol&eacute;culas org&aacute;nicas
+								e inorg&aacute;nicas. En c&eacute;lulas adultas generalmente hay una sola vacuola que puede ocupar desde el 30% hasta
+								el 90% del volumen celular, localiz&aacute;ndose en el citoplasma en la parte central de la c&eacute;lula.<br/><br/>
+                                Las funciones de las vacuolas son diversas y están relacionadas con: el mantenimiento de la turgencia celular, el almacenamiento
+                                de nutrimentos o productos de desecho, o tambi&eacute;n act&uacute;a como una estructura de degradaci&oacute;n de sustancias (semejantes a los lisosomas).
+                                En algunos vegetales las vacuolas almacenan compuestos t&oacute;xicos como medio de defensa contra los herb&iacute;voros, o tambi&eacute;n almacenan pigmentos
+                                de color rojo, azul, p&uacute;rpura o violeta que dan el color a las flores, frutos u hojas. En la misma c&eacute;lula vegetal pueden encontrarse diversas
+                                vacuolas con funciones diferentes.
+							</p>
+						</div>
+					</div><!--todaInformacion-->					
+    			</div><!--fases-->
+			</div><!-- contenido-->
+        </div><!--oacontext-->
+    </body>
+</html>

@@ -1,0 +1,537 @@
+/*
+ *  Estilo general para la plantilla
+ * /
+
+ /*
+ * Importante NO MODIFICAR este archivo
+ * Cualquier definiciÃ³n que se tenga que cambiar
+ * hay sobreescribirla en el principal.css
+ * (se puede usar el mismo selector)
+ */
+
+body, .oacontext {
+	padding: 0;
+	margin: 0;
+	/*arregla artefactos con ipad safari*/
+
+	/*	-webkit-perspective: 1000;
+	 -webkit-backface-visibility: hidden;*/
+}
+
+.oacontext {
+	padding: 0;
+	margin: 0;
+	margin: 0 auto;
+	max-width: 1024px;
+	min-width: 600px;
+	font-family: "MS Trebuchet", Verdana, sans-serif;
+}
+
+.contenido, .header, .footer {
+	position: relative;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+.negritas {
+	font-weight: bold;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.flotante-l {
+	float: left;
+}
+
+.flotante-r {
+	float: right;
+}
+
+.italicas {
+	font-style: italic;
+}
+
+/****
+ * fases
+ */
+.contenido .fase {
+	padding-top: 1px;
+	position: relative;
+	width: auto;
+	min-height: 623px;
+	transition: -ms-transform, transform, visibility, opacity;
+	-webkit-transition: -webkit-transform, visibility, opacity;
+	transition-duration: 200ms;
+	-webkit-transition-duration: 200ms;
+	transition-timing-function: linear;
+	-webkit-transition-timing-function: linear;
+	transition-delay: 200ms;
+	-webkit-transition-delay: 200ms;
+	/*arregla artefactos con ipad safari*/
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
+}
+
+.contenido .fase.oculto {
+	position: absolute;
+	max-height: 624px;
+	width: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	/*box-shadow: 1024px 0 #333 inset;*/
+	opacity: .3;
+	visibility: hidden;
+	transform: translateZ(0) rotateY(90deg);
+	-webkit-transform: translateZ(0) rotateY(90deg);
+	-ms-transform: translateZ(0) rotateY(90deg);
+	transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+}
+
+/******
+ * Preloader
+ */
+
+.contenido .preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, .5);
+	z-index: 50;
+	width: 100%;
+}
+
+.contenido .preloader div {
+	background: url('../img/general/preloader.gif') center center no-repeat;
+	width: 100%;
+	height: 100%;
+	text-indent: -100000px;
+}
+
+/************
+ * inicia header
+ * ***********/
+.header, .footer {
+	text-align: justify;
+	overflow: hidden;
+}
+
+.header {
+	padding-top: 15px;
+}
+
+.header img {
+	border: 0;
+}
+
+.header .ipn {
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	transition: all 200ms linear 200ms;
+	-webkit-transition: all 200ms linear 200ms;
+	margin: 0 8px;
+}
+
+.header .botones_encabezado {
+	border-bottom: 3px solid #9A5EA2;
+	margin-left: 7%;
+	margin-top: 1%;
+	text-transform: uppercase;
+	width: 77%;
+}
+
+.header .materia {
+	color: #682444;
+	width: 134px;
+	height: 50px;
+	position: absolute;
+	top: 16px;
+	left: 83.6%;
+}
+
+.header .nombre {
+	color: #682444;
+	height: 50px;
+	left: 10%;
+	position: absolute;
+	top: 35%;
+}
+
+/*terrmina header*/
+
+/***************
+ * inicia footer in appMode
+ * **************/
+.appMode [data-appfooter] {
+	background-color: #868686;
+	color: #FFFFFF;
+	font-family: Verdana, Geneva, sans-serif;
+	transition: all 200ms linear 400ms;
+	-webkit-transition: all 200ms linear 400ms;
+}
+
+.appMode [data-appfooter] {
+	background: url("../img/general/background_pie.jpg") repeat;
+	text-align: center;
+}
+
+.appMode [data-appfooter] .btn-icono {
+	overflow: hidden;
+	text-align: left;
+	text-indent: -9999px;
+	display: inline-block;
+	min-width: 38px;
+	min-height: 38px;
+	margin: 5px 20px;
+}
+
+.appMode [data-appfooter] .btn-icono:hover {
+	opacity: 1;
+}
+.appMode [data-appfooter] .btn-icono.inicio {
+	background: url("../img/general/inicio.png") no-repeat;
+	display: inline-block;
+}
+.appMode [data-appfooter] .btn-icono.recargar {
+	background: url("../img/general/recargar.png") no-repeat;
+	display: none;
+}
+.appMode [data-appfooter] .btn-icono.acerca {
+	background: url("../img/general/acerca.png") no-repeat;
+	display: inline-block;
+}
+.appMode [data-appfooter] .btn-icono.creditos {
+	background: url("../img/general/creditos.png") no-repeat;
+	display: inline-block;
+}
+.appMode [data-appfooter] .btn-icono.compartir {
+	background: url("../img/general/compartir_ios.png") no-repeat;
+	display: none;
+}
+
+/** ipa footer style **/
+.appMode [data-appfooter] {
+	position: fixed;
+	display: block;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 48px;
+	width: 1024px;
+	margin: auto;
+	overflow: hidden;
+	z-index: 45;
+	-webkit-transform: translate3d(0,0,1px);
+}
+.appMode .fases {
+	padding-bottom: 48px;
+}
+
+/*termina footer*/
+
+/********************
+ *  botones menu/footer
+ */
+
+.contenido .btn-icono {
+	text-indent: -9999px;
+	text-align: left;
+	background-position: center center;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+}
+
+.contenido .btn-icono:hover {
+	opacity: 1;
+}
+
+.contenido .btn-icono.vinculo {
+	background: url("../img/general/acerca.png") no-repeat;
+}
+
+.contenido .btn-icono.creditos {
+	background: url("../img/general/creditos.png") no-repeat;
+}
+
+.contenido .btn-icono.inicio {
+	background: url("../img/general/inicio.png") no-repeat;
+}
+.contenido .btn-icono.recargar {
+	background: url("../img/general/recargar.png") no-repeat;
+	display: none;
+}
+.contenido .btn-icono.acerca {
+	background: url("../img/general/acerca.png") no-repeat;
+}
+.contenido .btn-icono.compartir {
+	background: url("../img/general/compartir_ios.png") no-repeat;
+	display: none;
+}
+
+.contenido .btn-icono.btn-bibliografia {
+	background: url("../img/general/bibliografia.png") no-repeat;
+}
+
+/************************
+ *  ventanas generales
+ */
+
+.contenido .ventana {
+	border: 1px solid #000;
+	box-shadow: 0 2px 3px #666666;
+	padding: 20px;
+	position: absolute;
+	margin: auto;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	width: 300px;
+	z-index: 25;
+	background-color: #fff;
+	transition: all 200ms linear;
+	-webkit-transition: all 200ms linear;
+}
+
+.contenido .ventana.oculto {
+	transform: scale(0.1,0.1) translateZ(0);
+	-webkit-transform: scale(0.1,0.1) translateZ(0);
+	-ms-transform: scale(0.1,0.1) translateZ(0);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.contenido .ventana .btn-close {
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	background-color: #fff;
+	z-index: 45;
+	color: #000;
+	font-weight: bold;
+	height: 26px;
+	width: 26px;
+	line-height: 26px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px #000000;
+}
+
+/*****************
+ * ventanas creditos ficha didactica
+ ********************/
+
+.contenido .ventanaFC {
+	background: #b6b8b3; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #b6b8b3 0%, #e2e2e2 50%, #e5e3e4 100%, #b6b8b3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#b6b8b3), color-stop(50%,#e2e2e2), color-stop(100%,#e5e3e4), color-stop(100%,#b6b8b3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #b6b8b3 0%,#e2e2e2 50%,#e5e3e4 100%,#b6b8b3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #b6b8b3 0%,#e2e2e2 50%,#e5e3e4 100%,#b6b8b3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #b6b8b3 0%,#e2e2e2 50%,#e5e3e4 100%,#b6b8b3 100%); /* IE10+ */
+	background: linear-gradient(45deg, #b6b8b3 0%,#e2e2e2 50%,#e5e3e4 100%,#b6b8b3 100%); /* W3C */
+	border: 1px solid #c0c0c0;
+	border-radius: 0.3em 0.3em 0.3em 0.3em;
+	box-shadow: 0 2px 3px #666666;
+	color: #463D47;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	padding-left: 30px;
+	padding-right: 40px;
+	padding-bottom: 5px;
+	min-width: 630px;
+	z-index: 29;
+	top: 10px;
+}
+.contenido .ventanaFC.fichaDidactica {
+	z-index: 30;
+}
+
+.contenido .ventanaFC .titulo {
+	width: 620px;
+	margin: auto;
+	margin-top: 0;
+	color: #303030;
+	font-family: Verdana, Geneva, sans-serif;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.contenido .ventanaFC .info {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-top: solid 2px #817f80;
+	text-transform: none;
+}
+
+.contenido .ventanaFC .info h4 {
+	color: #2e2e2e;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.contenido .ventanaFC .info .columna {
+	float: left;
+	list-style: none;
+}
+
+.contenido .ventanaFC.creditos .info {
+	border-top: solid 2px #817f80;
+}
+
+.contenido .ventanaFC .info .negritas {
+	font-weight: bold;
+}
+.contenido .ventanaFC .info .negritas ul li {
+	font-weight: normal;
+	list-style-type: none;
+}
+
+.contenido .ventanaFC .info .negritas ul li p {
+	font-weight: bold;
+}
+
+.contenido .ventanaFC  .info .salto {
+	margin-top: 7px;
+}
+
+.contenido .ventanaFC .btn-close {
+	background-color: #9D9D9D;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+	height: 23px;
+	width: 23px;
+	line-height: 23px;
+}
+
+.fichaDidactica .leyenda {
+	font-size: 10px;
+	padding: 40px 35px 0 25px;
+	text-align: justify;
+}
+
+.contenido .btn-icono.oculto {
+	display: none;
+}
+
+.appMode .contenido .btn-icono.oculto {
+	display: inline-block;
+}
+
+/** Ajustes creditos **/
+.ventana.ventanaFC.creditos {
+	width: 910px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.contenido .ventanaFC.creditos .titulo {
+	width: auto;
+	text-align: center;
+}
+
+.contenido .ventana.ventanaFC.creditos .info:after {
+	content: "";
+	display: block;
+	clear: both;
+	line-height: 0px;
+	visibility: hidden;
+}
+
+.contenido .ventana.ventanaFC.creditos .info {
+	width: auto;
+	border: none;
+	text-align: center;
+}
+
+.contenido .ventana.ventanaFC.creditos .info ul {
+	list-style: none;
+}
+
+.contenido .creditos ul span {
+	display: block;
+}
+.contenido .creditos ul span.credito, .contenido .creditos ul span.cargo {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.contenido .creditosENTIDAD, .contenido .creditosDGTIC {
+	padding-left: 1%;
+	padding-right: 1%;
+	width: 23%;
+	float: left;
+}
+
+.contenido .creditosDGTIC {
+	width: 48%;
+}
+
+.contenido .nombreEntidad {
+	border-bottom: 2px solid #666;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+
+.contenido .creditosDGTIC ul.col {
+	width: 48%;
+	padding-left: 1%;
+	padding-right: 1%;
+	float: left;
+}
+
+.contenido .creditos ul {
+	margin: 0px;
+	padding: 0px;
+}
+.contenido .creditos li {
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+}
+
+.contenido .creditos .info ul li {
+	text-indent: 0px;
+}
+
+.contenido .ventana.bibliografia .info {
+	border-top: 2px solid #888888;
+}
+
+.contenido .ventana.bibliografia .info ul {
+	padding-left: 0px;
+	margin-left: 40px;
+}
+.contenido .ventana.bibliografia .info ul li {
+	margin-bottom: 10px;
+	list-style-type: disc;
+}
+
+.contenido .ventana.bibliografia .info ul li a {
+	color: #9A5DA0;
+	font-weight: normal;
+	text-decoration: none;
+}
+.contenido .ventana.bibliografia .info ul li a:hover {
+	color: #9A5DA0;
+}

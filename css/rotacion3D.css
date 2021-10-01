@@ -1,0 +1,104 @@
+/*******************************
+ *     vsior 3d
+ **************************/
+
+.rotacion3D .viewport {
+	position: relative;
+	/*  background: #fff url(../images/loading.gif) no-repeat 50% 50%; */
+	margin: auto;
+}
+
+.rotacion3D canvas {
+	z-index: 10;
+}
+
+.rotacion3D .directionNav {
+	z-index: 0;
+}
+
+.rotacion3D .directionNav a {
+	border: 0;
+	display: block;
+	z-index: 11;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url('../img/sprites/arrows.png') no-repeat;
+	background: url('../img/sprites/arrows.png') no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+	bottom: 5px;
+}
+
+.rotacion3D .preloader .bar {
+	background-color: #9dce97;
+	position: relative;
+	/*margin: auto;*/
+	height: 15px;
+	text-align: center;
+	color: #333;
+}
+
+.rotacion3D .directionNav a.nextNav {
+	background-position: -96px -32px;
+	right: 5px;
+}
+.rotacion3D .directionNav a.nextNav:hover {
+	background-position: -96px 0;
+}
+
+.rotacion3D .directionNav a.prevNav {
+	background-position: 0 -32px;
+	left: 5px;
+}
+.rotacion3D .directionNav a.prevNav:hover {
+	background-position: 0 0;
+}
+
+.rotacion3D .directionNav a.upNav {
+	background-position: -32px -32px;
+	left: 75px;
+}
+.rotacion3D .directionNav a.upNav:hover {
+	background-position: -32px 0;
+}
+
+.rotacion3D .directionNav a.downNav {
+	background-position: -64px -32px;
+	right: 75px;
+}
+.rotacion3D .directionNav a.downNav:hover {
+	background-position: -64px 0;
+}
+
+.rotacion3D .directionNav a.upNav.zoom {
+	background-position: -32px -64px;
+}
+.rotacion3D .directionNav a.upNav.zoom:hover {
+	background-position: 0px -64px;
+}
+
+.rotacion3D .directionNav a.downNav.zoom {
+	background-position: -64px -64px;
+}
+.rotacion3D .directionNav a.downNav.zoom:hover {
+	background-position: -96px -64px;
+}
+
+.rotacion3D .preloader {
+	width: 100%;
+	height: 100%;
+	background: url('../img/sprites/loading.gif') center center no-repeat;
+	z-index: 20;
+	position: absolute;
+}
+
+.rotacion3D .preloader .txt {
+	height: 20rem;
+	width: 300px;
+	margin: auto;
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}

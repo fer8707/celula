@@ -1,0 +1,714 @@
+/*FUENTES*/
+@font-face {
+    font-family: 'oswaldbook';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular-webfont.woff') format('woff'),
+         url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-regular-webfont.svg#oswaldbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url("../img/general/background_body.jpg") repeat scroll 50% 0 #FFFFFF;
+}
+
+.fases {
+    box-shadow: 0 0 20px #000000;
+}
+
+.contenido .btn-icono {	
+	text-indent: -9999px;
+	text-align: left;
+	background-position: center center;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin-top:20px;
+}
+
+.contenido .btn-icono:hover {
+	opacity: 1;
+}
+
+.contenido .btn-icono.vinculo {
+	background: url("../img/general/acerca.png") no-repeat;
+}
+
+.contenido .btn-icono.creditos {
+	background: url("../img/general/creditos.png") no-repeat;
+	z-index:6000;
+}
+
+/*ELEMENTOS QUE CAMBIAN DEL GENERAL.CSS*/
+.header {
+	background-color: #000000;
+    z-index: 1;
+}
+
+.header .botones_encabezado {
+	border-bottom: 3px solid #682444;
+	margin-top: 1.3%;
+	width: 77%;
+    color: #fff;
+	font-size:14px;
+	margin-left: 7%;
+	text-transform: uppercase;
+}
+
+.header .materia {
+	color: #682444;
+}
+
+.header .ipn {
+	color: #682444;
+	font-weight: bold;
+}
+
+.oacontext {
+	padding: 0;
+	margin: 0;
+	margin: 0 auto;
+	max-width: 1024px;
+	min-width: 600px;
+	font-family: "MS Trebuchet", Verdana, sans-serif;
+	font-size:11px;
+}
+
+.contenido .botones {
+    bottom: -29px;
+    position: absolute;
+    right: 25px;
+    z-index: 7;
+}
+
+/*para quitar el drop shadow de la ventana pop up, debo ser mas especifica y poner la ruta de esta ventana a la que se lo quiero quitar, sino me lo va a quitar de todas______sobrescribi general*/
+.contenido .ventana {
+	box-shadow:none;
+}
+
+/*GENERALES PARA AMBAS FASES*/
+.fases .animal,
+.fases .vegetal {
+	background-color:#000;
+}
+
+.fases .cellbox {
+    position: relative;
+	width: 1024px;
+	height: 672px;
+	background: url('../img/cell/fondo.jpg') no-repeat center center;
+	padding-top: 50px;
+}
+
+.fases li a {
+  color: #ffffff;
+  font-family: 'oswaldbook';
+  font-size:12px;
+  letter-spacing: 1px;
+}
+
+.fases li:after{
+	 background-color: #000;
+	 border: 4px solid #BCDB71;
+	 border-radius:50%;
+	 height: 8px;
+	 width: 8px;
+	 content:"";
+	 display: block;
+	 position: absolute;
+}
+
+.contenido .ventana.content3D {
+	background-color:#000;
+	width:845px;
+	height:570px;
+	left:0px;
+	right:0px;
+	top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	transform:translateZ(11px);
+	-ms-transform:translateZ(11px); /* IE 9 */
+	-webkit-transform:translateZ(11px);
+}
+
+.contenido .ventana.content3D .contenedor_3D {
+	float:left;
+	height: 219px;
+    width: 502px;
+	height:448px;
+	border: 7px solid #682444;
+	border-bottom:57px solid #682444;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+    border-radius: 8px;
+   -moz-box-shadow: 0px 0px 4px #000000;
+   -webkit-box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 4px #000000;
+	background-color:#682444a1;
+}
+
+.ventana.content3D .contenedor_3D .titulo {
+    text-transform: uppercase;
+	text-align:center;
+	font-size:15px;
+	font-stretch:narrower;
+    color: #fff;
+}
+
+.ventana.content3D .contenedor_3D .titulo :after {
+    border-right: 2px solid #7EB2A0;
+    content: "";
+    height: 41px;
+    left: 295px;
+    position: absolute;
+    top: -12px;
+    width: 10px;
+}
+
+.ventana.content3D .contenedor_3D .celula3d.rotacion3D {
+    height: 434px;
+    left: 8px;
+    position: relative;
+    top: 16px;
+    transform: scale(0.8);
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform-origin: 0 0 0;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    width: 608px;
+}
+
+.ventana.content3D .imgFija {
+    height: 400px;
+    margin: auto;
+}
+
+.ventana.content3D .contenedor_texto {
+ 	float:left;
+	width:250px;
+	height:448px;
+    margin-left:19px;
+	border: 7px solid #682444;
+	border-bottom:57px solid #682444;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+    border-radius: 8px;
+   -moz-box-shadow: 0px 0px 4px #000000;
+   -webkit-box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 4px #000000;
+	overflow:auto;
+  	scrollbar-face-color: #6685CA;
+	scrollbar-highlight-color: #6685CA;
+	scrollbar-shadow-color: #6685CA;
+	scrollbar-3dlight-color:#FFFFFF;
+	scrollbar-arrow-color:#FFFFFF;
+	scrollbar-track-color:#E5E5E5;
+	scrollbar-drakshadow-color:#000000;
+	padding-left:8px;
+	padding-right:8px;
+	background-color:#682444a1;
+}
+
+.invisible{
+	display:none;
+}
+
+/*CELULA ANIMAL*/
+.animal .celula_euca {
+	position: relative;
+	width: 762px;
+  	height: 524px;
+  	margin-top:-600px;
+  	margin-left: 160px;
+  	background: url('../img/cell/cell.png');
+  	background-repeat: no-repeat;
+  	list-style-type: none;
+}
+
+/*ORGANELOS EN ORDEN ALFABETICO CELULA ANIMAL*/
+.animal .centrosomaCell {
+	position: absolute;
+    left: 27px;
+	top: 138px;	
+}
+
+.animal li.centrosomaCell:after {
+	 right:-20px;
+	 top:2px;
+}
+
+.animal .ciliosCell {
+    left: 526px;
+    position: absolute;
+    top: 462px;
+}
+
+.animal li.ciliosCell:after {
+	 left:-18px;
+	 top:-8px;
+}
+
+.animal .citoesqCell {
+    left: 402px;
+    position: absolute;
+    top: 511px;
+}
+
+.animal li.citoesqCell:after {
+    left: 1px;
+    top: -25px;
+}
+
+.animal .citoplasmaCell {
+    left: 657px;
+    position: absolute;
+    top: 309px;
+}
+
+.animal li.citoplasmaCell:after {
+	 left:-25px;
+	 top:2px;
+	 text-indent: -20px;
+}
+
+.animal .cromatinaCell {
+    left: 596px;
+    position: absolute;
+    top: 121px;
+}
+
+.animal li.cromatinaCell:after {
+	 left:-20px;
+	 top:2px;
+}
+
+.animal .envolturaNCell {
+	position: absolute;
+    left: 280px;
+	top: 0px;
+}
+
+.animal li.envolturaNCell:after {
+	 left: 64px;
+	 top:18px;
+}
+
+.animal .flageloCell {
+	position: absolute;
+    left: 40px;
+	top: 238px;	
+}
+
+.animal li.flageloCell:after {
+	 right:-20px;
+	 top:2px;
+}
+
+.animal .golgiCell {
+	left: 88px;
+    position: absolute;
+    top: 419px;
+}
+
+.animal li.golgiCell:after {
+	 right:-20px;
+	 top:2px;
+}
+
+.animal .lisosomasCell {
+	left: 58px;
+    position: absolute;
+    top: 333px;
+}
+
+.animal li.lisosomasCell:after {
+	 right:-20px;
+	 top:2px;
+}
+
+.animal .memPlasmCell {
+	position: absolute;
+    left: 164px;
+	top: 490px;	
+}
+
+.animal li.memPlasmCell:after {
+	 right:-15px;
+	 top:-14px;
+}
+
+.animal .mitocondriasCell {
+    left: 613px;
+    position: absolute;
+    top: 388px;
+}
+
+.animal li.mitocondriasCell:after {
+    left: -24px;
+    top: -1px;
+}
+
+.animal .nucleoCell {
+    left: 550px;
+    position: absolute;
+    top: 87px;
+}
+
+.animal li.nucleoCell:after {
+	 left:-20px;
+	 top:2px;
+}
+
+.animal .nucleoloCell {
+    left: 494px;
+    position: absolute;
+    top: 52px;
+}
+
+.animal li.nucleoloCell:after {
+    left: -22px;
+    top: 2px;
+}
+
+.animal .nucleoPlasCell {
+    left: 430px;
+    position: absolute;
+    top: 15px;
+}
+
+.animal li.nucleoPlasCell:after {
+	 left:-20px;
+	 top:2px;
+}
+
+.animal .porosNuCell {
+	position: absolute;
+    left: 191px;
+	top: 28px;	
+}
+
+.animal li.porosNuCell:after {
+	 right:0px;
+	 top:2px;
+}
+
+.animal .reticuloLCell {
+    left: 665px;
+    position: absolute;
+    text-align: center;
+    top: 225px;
+}
+
+.animal li.reticuloLCell:after {
+	 left:-20px;
+	 top:20px;
+}
+
+.animal .reticuloRCell {
+    left: 655px;
+    position: absolute;
+    text-align: center;
+    top: 151px;
+}
+
+.animal li.reticuloRCell:after {
+	 left:-20px;
+	 top:20px;
+}
+
+.animal .ribosomasDerCell {
+	left: 76px;
+    position: absolute;
+    top: 42px;
+}
+
+.animal li.ribosomasDerCell:after {
+	 right:-20px;
+	 top:20px;
+}
+
+/*FASE 2, CELULA VEGETAL*/
+.vegetal .celula_euca_vegetal {
+	position: relative;
+ 	width: 762px;
+  	height: 524px;
+  	margin-top:-600px;
+  	margin-left: 160px;
+  	background: url('../img/cell/cell_vegetal.png');
+  	background-repeat: no-repeat;
+  	list-style-type: none;
+}
+
+/*ORGANELOS EN ORDEN ALFABETICO CELULA VEGETAL*/
+/*ORGANELOS EN ORDEN ALFABETICO*/
+.vegetal .centrosomaCell {
+     left: 497px;
+    position: absolute;
+    top: -1px;
+}
+
+.vegetal li.centrosomaCell:after {
+	right: 78px;
+    top: 2px;
+}
+
+.vegetal .citoesqCell {
+     left: 343px;
+    position: absolute;
+    top: -37px;
+	}
+	
+.vegetal li.citoesqCell:after {
+	left: 34px;
+    top: 21px;
+}
+
+.vegetal .cloroplastoCell {
+	  left: 56px;
+    position: absolute;
+    top: 62px;
+}
+
+.vegetal li.cloroplastoCell:after {
+	 left: 88px;
+    top: 4px;
+}
+
+.vegetal .cromatinaCell {
+	left: 677px;
+    position: absolute;
+    top: 192px;
+}
+
+.vegetal li.cromatinaCell:after {
+	left: -24px;
+    top: 2px;
+}
+	
+.vegetal .envolturaNCell {
+    left: 592px;
+    position: absolute;
+    top: 37px;
+}
+
+.vegetal li.envolturaNCell:after {
+    left: -25px;
+    top: 13px;
+}
+
+.vegetal .golgiCell {
+	 left: 5px;
+    position: absolute;
+    top: 289px;
+}
+
+.vegetal li.golgiCell:after{
+	right: -21px;
+    top: 2px
+}
+
+.vegetal .citoplasmaCell {
+	 left: 62px;
+    position: absolute;
+    top: 380px;
+}
+
+.vegetal li.citoplasmaCell:after{
+	left: 93px;
+    top: -5px;
+}
+
+.vegetal .memPlasmCell {
+	 left: 296px;
+    position: absolute;
+    top: 506px;
+}
+
+.vegetal li.memPlasmCell:after{
+	right: 25px;
+    top: -23px;
+}
+
+.vegetal .mitocondriasCell {
+	left: 106px;
+    position: absolute;
+    top: 0px;
+}
+
+.vegetal li.mitocondriasCell:after{
+   left: 95px;
+    top: 3px;
+}
+
+.vegetal .nucleoCell {
+	left: 46px;
+    position: absolute;
+    top: 216px;
+}
+
+.vegetal li.nucleoCell:after{
+	left: 56px;
+    top: 2px;
+}
+
+.vegetal .nucleoloCell {
+	 left: 622px;
+    position: absolute;
+    top: 390px;
+}
+
+.vegetal li.nucleoloCell:after{
+	 right: 64px;
+    top: -14px;
+}
+
+.vegetal .nucleoPlasCell {
+	left: 668px;
+    position: absolute;
+    top: 278px;
+}
+
+.vegetal li.nucleoPlasCell:after{
+	right: 97px;
+    top: 2px;
+}
+
+.vegetal .paredCelularCell {
+    left: 221px;
+    position: absolute;
+    top: -37px;
+}
+
+.vegetal li.paredCelularCell:after{
+	left: 65px;
+    top: 23px;
+}
+
+.vegetal .porosNuCell {
+	 left: 651px;
+    position: absolute;
+    top: 98px;
+}
+
+.vegetal li.porosNuCell:after{
+	right: 74px;
+    top: 8px;
+}
+
+.vegetal .reticuloLCell {
+	left: 149px;
+    position: absolute;
+    text-align: center;
+    top: 453px;
+}
+
+.vegetal li.reticuloLCell:after{
+	left: 85px;
+    top: -5px;
+}
+
+.vegetal .reticuloRCell {
+	 left: 505px;
+    position: absolute;
+    text-align: center;
+    top: 459px;
+}
+
+.vegetal li.reticuloRCell:after{
+	 left: 9px;
+    top: -8px;
+}
+
+.vegetal .ribosomasCell {
+	left: 391px;
+    position: absolute;
+    top: 505px;
+}
+
+.vegetal li.ribosomasCell:after{
+	left: 24px;
+    text-indent: -20px;
+    top: -19px;
+}
+
+.vegetal .vacuolaCell {
+   left: 46px;
+    position: absolute;
+    top: 137px;
+}
+
+.vegetal li.vacuolaCell:after{
+	left: 65px;
+    top: 3px;
+}
+
+.oacontext {
+    font-family: "MS Trebuchet",Verdana,sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+/*****************Btns Cells options*******************/
+.contenido .opciones input[type="radio"] {
+    display: none;
+}
+
+.contenido .opciones input[type="radio"]:checked + label {
+    background: url("../img/select.png") no-repeat scroll 5px 6px #a0003d;
+}
+
+.contenido .opciones input[type="radio"] + label {
+    background-color: #a0003d;
+    border: 1px solid #a0003d;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px #000000;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin: -4px 8px 0 0;
+    width: 30px;
+}
+
+.contenido .opciones {
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    z-index: 1;
+	transform:translateZ(10px);
+	-ms-transform:translateZ(10px); /* IE 9 */
+	-webkit-transform:translateZ(10px);
+}
+
+.opciones label span {
+    border-bottom: 1px dotted #BCDB71;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 35px;
+    margin-left: 45px;
+    text-transform: uppercase;
+}
+
+/*Ajuste de creditos*/
+.contenido .creditosENTIDAD, .contenido .creditosDGTIC {
+	padding-left: 2%;
+	width: 30%;
+}
+
+.contenido .creditosDGTIC {
+	width: 60%;
+}
+
+
+.descargar {
+    background-image: url("../img/pdf.png");
+    bottom: -36px;
+    height: 47px;
+    left: 15px;
+    position: absolute;
+    width: 38px;
+    z-index: 2;
+}
